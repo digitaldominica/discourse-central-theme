@@ -126,6 +126,9 @@
   &__edit {
     margin-top: 1rem;
     @include button($style: neutral);
+    span {
+      color: var(--neutral-30);
+    }
   }
 
   &__bio {
@@ -138,10 +141,6 @@
   }
 
   &__link {
-    &:before {
-      @include i($font-size: 1.125rem);
-      content: "link";
-    }
     display: inline-flex;
     gap: 0.25rem;
     align-items: center;
@@ -149,6 +148,30 @@
     @include body-medium;
     a {
       color: var(--primary);
+    }
+  }
+
+  &__login {
+    margin: 1em 0;
+  }
+}
+
+.user-main {
+  .about.has-background .user-profile-image {
+    margin: 0 -1rem;
+  }
+  .staff-counters {
+    background: var(--primary-very-low);
+    border-radius: var(--rounded-lg) var(--rounded-lg) 0 0;
+    margin: -1rem -1rem 1rem -1rem;
+    div {
+      color: var(--primary);
+      > a {
+        color: var(--primary);
+      }
+    }
+    span {
+      color: var(--secondary);
     }
   }
 }

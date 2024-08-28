@@ -58,6 +58,8 @@
       padding: 0;
     }
     .docs-topic {
+      width: 100%;
+      padding-right: 0.5rem;
       .docs-nav-link {
         &.more {
           padding: 1rem;
@@ -67,11 +69,7 @@
           padding: 1rem;
           display: flex;
           gap: 1rem;
-          &:before {
-            @include i;
-            content: "arrow_back";
-            margin: 0;
-          }
+
           @include label-large;
         }
       }
